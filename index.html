@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootswatch. Bootstrap CSS -->
+    <link type="text/css"  href="styles/bootstrap.css" rel="stylesheet">
+    <!--
+    <link type="text/css"  href="styles/bootstrap.min.css" rel="stylesheet">-->
+    <link type="text/css"  href="styles/latitudeStyles.css" rel="stylesheet">
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Latitude <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Visualizations</a>
+                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                                <a class="dropdown-item" href="maxTemp.html">Max. Temperature</a>
+                                <a class="dropdown-item" href="coludiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="windspeedDir.html">Wind Speed with Direction</a>
+                            </div>  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="index.html">Latitude  
+                        <!-- <img src="dataCatLogo.gif" alt="DataCat logo">-->
+                        &nbsp;<span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; font-size: small"> by DataCat</span></a>
+                      
+            </nav>
+
+            <div class="row abovePadLanding" >
+
+                    <div class="col-lg-7 landingMaintext">
+                        <h3><strong>Latitude </strong>Summary</h3>
+                        <h5>
+                            This project Analizes the weather data of over 500 random cities in relation to the Ecuator.
+                        </h5>
+                    </div>
+                    <div class="col-lg-5">
+             
+                                <p class="landtext">Data for this analysis was gathered performing API requests on a single date and time for random cities.<br />  Factors gathered where Max. Temperature, Cloudiness, Humidity Wind speed and Wind Direction, these factors, where used in the search for correlations with the city's latitude, keeping in mind that a latitude of the Ecuator is 0. <br />
+                                    </p>
+                    </div>
+
+                </div><!-- row-->
+
+            <div class="row abovePadLanding">
+                <div class="col-lg-6">
+                    
+                    <a href="windspeedDir.html">
+                    <img src="Plots/CorrelationLatVsWindSpeedwDir.png" class="img-fluid  " alt="Latitude vs Wind Speed with direction"></a>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <a href="maxTemp.html">
+                    <img src="Plots/CorrelationLatVsTemp.png" class="img-fluid  " alt="Latitude vs Temperature"> </a>
+                    <a href="coludiness.html">
+                    <img src="Plots/CorrelationLatVsCloud.png" class="img-fluid " alt="Latitude vs Cloudiness"></a>   
+                </div>
+                <div class="col-lg-3">
+                 
+                    <a href="humidity.html">
+                    <img src="Plots/CorrelationLatVsHumidity.png" class="img-fluid " alt="Latitude vs Humidity"></a>
+                    <a href="windspeed.html">
+                    <img src="Plots/CorrelationLatVsWindSpeed.png" class="img-fluid " alt="Latitude vs Wind Speed"></a>
+
+                </div>
+            </div><!--row-->
+  
+        
+            <!-- footer-->
+            <div class="row abovePadLanding " >
+                <div class="col-lg-12 lat_footer ">
+                    <p class="lat_footer_text">
+                                Latitude analysis  with Python 3.6, Pandas and Mathplotlib on  Jupyter Notebook.
+                    </p>
+                </div>
+                </div><!-- row-->
+        </div><!-- container-->
+
+
+
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        </body>
+</html>
+

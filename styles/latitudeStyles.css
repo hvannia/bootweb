@@ -1,0 +1,60 @@
+body{
+    background-color:#f8fcfc;
+}
+.landtext{
+    font-size: 14px;
+    padding-top: 2%;
+    text-align: justify;
+}
+.landingMaintext{
+    vertical-align: middle;
+}
+@media only screen and (max-width: 600px) {
+    .bg-primary{
+      background-color:#5d5d5d;
+    }
+  }
+
+.lat_footer{
+    text-align:center;
+    width: 100%
+}
+.lat_footer_text{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left : 5px;
+    padding-right:5px;
+    color:#e7f3f3;
+    text-align: center; 
+    background-color: #2C3E50 ;
+}
+
+.plotOnLanding{
+  
+    border-radius:5%;
+    overflow:hidden;  
+    padding-left: 20px; 
+    padding-top:15%;
+
+}
+
+.abovePadLanding{
+    padding-top: 10px;
+}
+.belowMainPlots{
+    padding-top: 20px;
+}
+
+.cardborder{ 
+    margin-top: 20PX;
+}
+
+.visImage{
+    max-width: 85%;
+    
+}
+.centerContents{
+    align-items: center;    
+}
+tr:nth-child(even){background-color: #f8fcfc}

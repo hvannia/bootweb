@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- bootswatch. Bootstrap CSS -->
+        <link type="text/css"  href="styles/bootstrap.css" rel="stylesheet">
+        <!--
+        <link type="text/css"  href="styles/bootstrap.min.css" rel="stylesheet">-->
+        <link type="text/css"  href="styles/latitudeStyles.css" rel="stylesheet">
+    
+        <title>Wind Speed & Direction </title>
+      </head>
+      <body>
+            <div class="container">
+    
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Latitude <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Visualizations</a>
+                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                                    <a class="dropdown-item" href="maxTemp.html">Max. Temperature</a>
+                                    <a class="dropdown-item" href="coludiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                                    <!--
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="windspeedDir.html">Wind Speed with Direction</a>
+                                </div>  -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comparison.html">Comparison</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="data.html">Data</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand" href="index.html">Latitude   
+                            <!-- <img src="dataCatLogo.gif" alt="DataCat logo">-->
+                            &nbsp;<span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; font-size: small"> by DataCat</span></a>
+                  
+                </nav>
+
+                <div class="row abovePadLanding" >
+                        <div class="col-lg-6 ">
+                 
+                            <img src="Plots/CorrelationLatVsWindSpeedwDir.png" class="img-fluid belowMainPlots visImage" alt="Latitude vs Temperature"/> 
+                        <div class=" mb-3 cardborder " >
+                            <div class="card-header"><h4>Latitude vs Wind Speed & Direction</h4></div>
+                            <div class="card-body">
+                              
+                              <p class="card-text">     
+                                    No correlation between latitude and wind speed had been found, considerations of  wind speed direction, shown as colored arrows do not affect original wind speed correlation.</p>
+                            </div>
+                        </div>
+                      </div>
+    
+                      <div class="col-lg-6" >
+                          <p>&nbsp;</p>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-xs-12 ">
+                            <a href="maxTemp.html">
+                            <img src="Plots/CorrelationLatVsTemp.png" class="img-fluid " alt="Latitude vs Max. Temp.">  </a>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-xs-12 ">
+                            <a href="coludiness.html">
+                            <img src="Plots/CorrelationLatVsCloud.png" class="img-fluid " alt="Latitude vs Cloudiness"></a>
+                          </div>
+                          </div><!-- ROw inside col6-->
+                          <p>&nbsp;</p>
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12">
+                              <a href="humidity.html">
+                              <img src="Plots/CorrelationLatVsHumidity.png" class="img-fluid " alt="Latitude vs Humidty"></a>
+                            </div>
+                          <div class="col-lg-6 col-md-6 col-xs-12">
+                            <a href="windspeed.html">
+                            <img src="Plots/CorrelationLatVsWindSpeed.png" class="img-fluid  " alt="Latitude vs Wind Speed"></a>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+    
+    
+    
+      
+
+
+
+
+        
+            <!-- footer-->
+            <div class="row abovePadLanding " >
+                <div class="col-lg-12 lat_footer ">
+                    <p class="lat_footer_text">
+                                Latitude analysis with Python 3.6, Pandas and Mathplotlib on  Jupyter Notebook.
+                    </p>
+                </div>
+                </div><!-- row-->
+
+
+            </div>
+    </body>
+</html>
+        
